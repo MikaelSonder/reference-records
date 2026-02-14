@@ -1,0 +1,39 @@
+:root {
+  --text: #111;
+  --muted: #666;
+  --bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 680px;
+  padding: 3rem 1.5rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+.meta {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}

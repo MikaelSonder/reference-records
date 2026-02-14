@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reference Record</title>
+  <meta name="description" content="A neutral archival record of contextual references.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Reference Record</h1>
+    </header>
+
+    <section>
+      <p>
+        This site maintains a collection of static reference records,
+        published for contextual and archival purposes.
+      </p>
+
+      <p>
+        Each record stands independently and reflects the state of
+        information at the time of publication.
+      </p>
+    </section>
+
+    <footer>
+      <p class="meta">
+        Established 2026 · Public archival material
+      </p>
+    </footer>
+  </main>
+
+</body>
+</html>
