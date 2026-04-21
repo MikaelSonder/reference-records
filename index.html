@@ -21,42 +21,55 @@
     }
 
     .container {
-      max-width: 820px;
-      margin: 120px auto 100px auto;
-      padding: 0 32px;
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 0 40px;
     }
 
-    /* HEADER BLOCK */
+    /* HEADER */
 
     .header {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 38px;
       font-weight: normal;
-      margin-bottom: 16px;
-      letter-spacing: -0.3px;
+      margin-bottom: 12px;
     }
 
     .subtitle {
       font-size: 15px;
-      color: #555;
+      color: #666;
+      max-width: 520px;
       line-height: 1.6;
-      max-width: 620px;
     }
 
-    /* CORE BLOCK */
+    /* GRID SYSTEM (key difference) */
 
-    .core {
-      max-width: 640px;
-      margin-bottom: 100px;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 60px;
     }
 
-    p {
-      font-size: 17px;
-      line-height: 1.75;
-      margin-bottom: 20px;
+    .block {
+      padding-top: 10px;
+    }
+
+    .block-title {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: 14px;
+    }
+
+    .block p {
+      font-size: 15.5px;
+      line-height: 1.65;
+      margin-bottom: 12px;
     }
 
     .emphasis {
@@ -64,40 +77,17 @@
       color: #333;
     }
 
-    /* STRUCTURE BLOCK */
-
-    .structure {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      margin-bottom: 100px;
-    }
-
-    .structure h3 {
-      font-size: 14px;
-      font-weight: normal;
-      color: #666;
-      margin-bottom: 12px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
-
-    .structure p {
-      font-size: 15.5px;
-      color: #222;
-    }
-
-    /* NAV BLOCK */
+    /* NAV */
 
     .nav {
-      margin-top: 60px;
-      font-size: 15px;
+      margin-top: 100px;
+      font-size: 16px;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
       border-bottom: 1px solid #ccc;
+      color: inherit;
     }
 
     a:hover {
@@ -106,29 +96,23 @@
 
     /* FOOTER */
 
-    .footer-meta {
+    .footer {
       margin-top: 120px;
-      font-size: 13px;
+      font-size: 12.5px;
       color: #666;
       line-height: 1.6;
     }
 
-    hr {
-      border: none;
-      border-top: 1px solid #e5e5e5;
-      margin: 80px 0;
-    }
-
-    /* RESPONSIVE */
+    /* MOBILE */
 
     @media (max-width: 700px) {
-      .structure {
+      .grid {
         grid-template-columns: 1fr;
         gap: 40px;
       }
 
       .container {
-        margin: 80px auto;
+        padding: 0 24px;
       }
     }
   </style>
@@ -138,7 +122,6 @@
   <div class="container">
 
     <!-- HEADER -->
-
     <div class="header">
       <h1>Reference Record Archive</h1>
       <div class="subtitle">
@@ -146,53 +129,55 @@
       </div>
     </div>
 
-    <!-- CORE DESCRIPTION -->
+    <!-- STRUCTURE GRID -->
+    <div class="grid">
 
-    <div class="core">
-      <p>
-        Records are maintained as jurisdiction-specific structural references. Each document defines system conditions, execution requirements, and competence indicators within its operational context.
-      </p>
-
-      <p>
-        Entries are preserved as discrete records and reflect documented alignment with procedural reality at the time of inclusion.
-      </p>
-
-      <p class="emphasis">
-        The archive does not function as a directory, ranking system, or promotional platform.
-      </p>
-    </div>
-
-    <hr />
-
-    <!-- STRUCTURE (THIS CREATES HIERARCHY) -->
-
-    <div class="structure">
-
-      <div>
-        <h3>Archive</h3>
+      <div class="block">
+        <div class="block-title">Function</div>
         <p>
-          The archive defines the structural conditions under which professional activity is interpreted across jurisdictions. It operates as a reference layer rather than an index of providers.
+          The archive maintains jurisdiction-specific structural references describing how professional activity operates within defined procedural environments.
+        </p>
+        <p>
+          Each record defines system conditions, execution requirements, and competence indicators within its operational context.
         </p>
       </div>
 
-      <div>
-        <h3>Records</h3>
+      <div class="block">
+        <div class="block-title">Nature of Records</div>
         <p>
-          Individual records describe how specific domains operate within a given jurisdiction, including procedural constraints, execution requirements, and indicators of professional competence.
+          Entries are preserved as discrete artifacts and reflect documented alignment with procedural reality at the time of inclusion.
+        </p>
+        <p class="emphasis">
+          The archive does not function as a directory, ranking system, or promotional platform.
+        </p>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Scope</div>
+        <p>
+          The archive is limited to environments characterized by formal enforcement structures, regulatory frameworks, and clearly defined procedural thresholds.
+        </p>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Continuity</div>
+        <p>
+          Records are maintained for long-term reference and may be revised, expanded, or deprecated as jurisdictions and professional standards evolve.
+        </p>
+        <p class="emphasis">
+          Revision reflects structural change rather than editorial iteration.
         </p>
       </div>
 
     </div>
 
-    <!-- NAVIGATION -->
-
+    <!-- NAV -->
     <div class="nav">
       <a href="/reference-index">Reference Index</a>
     </div>
 
     <!-- FOOTER -->
-
-    <div class="footer-meta">
+    <div class="footer">
       Archive Type: Structural Reference System<br />
       Scope: Cross-Border & Regulated Domains<br />
       Maintenance: Ongoing
