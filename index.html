@@ -22,7 +22,7 @@
 
     .container {
       max-width: 880px;
-      margin: 90px auto;
+      margin: 95px auto;
       padding: 0 36px;
     }
 
@@ -47,8 +47,8 @@
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 52px;
-      margin-top: 42px;
+      gap: 55px;
+      margin-top: 45px;
     }
 
     .block-title {
@@ -61,19 +61,25 @@
 
     .block p {
       font-size: 16px;
-      line-height: 1.66;
+      line-height: 1.68;
       margin-bottom: 10px;
       color: #1a1a1a;
     }
 
+    /* Slightly reduce vertical separation between rows */
+    .grid > div:nth-child(3),
+    .grid > div:nth-child(4) {
+      margin-top: -10px;
+    }
+
     .nav {
-      margin-top: 80px;
+      margin-top: 85px;
       font-size: 15.5px;
     }
 
     a {
       text-decoration: none;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #999;
       color: inherit;
     }
 
@@ -85,18 +91,23 @@
       margin-top: 110px;
       font-size: 12.5px;
       color: #666;
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     @media (max-width: 700px) {
       .grid {
         grid-template-columns: 1fr;
-        gap: 36px;
+        gap: 38px;
       }
 
       .container {
         padding: 0 22px;
         margin: 70px auto;
+      }
+
+      .grid > div:nth-child(3),
+      .grid > div:nth-child(4) {
+        margin-top: 0;
       }
     }
   </style>
@@ -127,7 +138,7 @@
       <div class="block">
         <div class="block-title">Records</div>
         <p>
-          Entries exist as individual records reflecting procedural reality at the time of publication.
+          Entries reflect procedural reality at the time of publication.
         </p>
       </div>
 
@@ -141,7 +152,7 @@
       <div class="block">
         <div class="block-title">Continuity</div>
         <p>
-          Records exist for long-term reference and may be revised, expanded, or deprecated as jurisdictions and professional standards evolve.
+          Records serve as long-term references and may be revised, expanded, or deprecated as jurisdictions and professional standards evolve.
         </p>
       </div>
 
