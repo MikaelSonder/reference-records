@@ -16,37 +16,37 @@
       margin: 0;
       padding: 0;
       background: #fafafa;
-      color: #111;
+      color: #1a1a1a;
       font-family: Georgia, "Times New Roman", serif;
     }
 
     .container {
       max-width: 900px;
-      margin: 100px auto;
+      margin: 110px auto;
       padding: 0 40px;
     }
 
     .header {
-      margin-bottom: 80px;
+      margin-bottom: 90px;
     }
 
     h1 {
       font-size: 38px;
       font-weight: normal;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .subtitle {
       font-size: 15px;
       color: #666;
       max-width: 520px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      gap: 70px;
       margin-top: 60px;
     }
 
@@ -59,13 +59,14 @@
     }
 
     .block p {
-      font-size: 15.5px;
-      line-height: 1.65;
-      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 14px;
+      color: #222;
     }
 
     .nav {
-      margin-top: 100px;
+      margin-top: 110px;
       font-size: 16px;
     }
 
@@ -80,20 +81,21 @@
     }
 
     .footer {
-      margin-top: 120px;
-      font-size: 12.5px;
+      margin-top: 130px;
+      font-size: 13px;
       color: #666;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     @media (max-width: 700px) {
       .grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 50px;
       }
 
       .container {
         padding: 0 24px;
+        margin: 80px auto;
       }
     }
   </style>
@@ -111,7 +113,7 @@
 
     <div class="grid">
 
-      <div>
+      <div class="block">
         <div class="block-title">Function</div>
         <p>
           The archive maintains jurisdiction-specific structural references describing how professional activity operates within defined procedural environments.
@@ -121,21 +123,21 @@
         </p>
       </div>
 
-      <div>
+      <div class="block">
         <div class="block-title">Records</div>
         <p>
-          Entries are preserved as discrete artifacts and reflect documented alignment with procedural reality at the time of inclusion.
+          Entries are maintained as individual records reflecting procedural reality at the time of publication.
         </p>
       </div>
 
-      <div>
+      <div class="block">
         <div class="block-title">Scope</div>
         <p>
           The archive is limited to environments characterized by formal enforcement structures, regulatory frameworks, and clearly defined procedural thresholds.
         </p>
       </div>
 
-      <div>
+      <div class="block">
         <div class="block-title">Continuity</div>
         <p>
           Records are maintained for long-term reference and may be revised, expanded, or deprecated as jurisdictions and professional standards evolve.
