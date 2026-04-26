@@ -29,40 +29,56 @@
     h1 {
       font-size: 34px;
       font-weight: normal;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
       letter-spacing: -0.2px;
     }
 
-    .label {
+    .label-top {
       font-size: 12px;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #777;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .divider {
       width: 100%;
       height: 1px;
       background: #e6e6e6;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .list {
       display: flex;
       flex-direction: column;
-      gap: 11px;
+    }
+
+    .group {
+      margin-top: 26px;
+    }
+
+    .group:first-child {
+      margin-top: 0;
+    }
+
+    .group-label {
+      font-size: 11px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 8px;
     }
 
     .item {
-      font-size: 16.5px;
-      line-height: 1.45;
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 4px 0;
     }
 
     a {
       text-decoration: none;
       color: inherit;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #ddd;
     }
 
     a:hover {
@@ -90,58 +106,37 @@
 
     <h1>Reference Records</h1>
 
-    <div class="label">Structured by Domain.</div>
+    <div class="label-top">Structured by Domain.</div>
 
     <div class="divider"></div>
 
     <div class="list">
 
-      <div class="item">
-        <a href="/records/debt-collection/">Debt Collection</a>
+      <!-- Expansion -->
+      <div class="group">
+        <div class="group-label">Expansion</div>
+
+        <div class="item"><a href="/records/company-formation/">Company Formation</a></div>
+        <div class="item"><a href="/records/tax-advisory/">Tax Advisory</a></div>
+        <div class="item"><a href="/records/accounting/">Accounting</a></div>
+        <div class="item"><a href="/records/payroll-employment/">Payroll &amp; Employment</a></div>
+        <div class="item"><a href="/records/vat-advisory/">VAT Advisory</a></div>
       </div>
 
-      <div class="item">
-        <a href="/records/accounting/">Accounting</a>
+      <!-- Problems -->
+      <div class="group">
+        <div class="group-label">Problems</div>
+
+        <div class="item"><a href="/records/debt-collection/">Debt Collection</a></div>
+        <div class="item"><a href="/records/litigation/">Litigation</a></div>
       </div>
 
-      <div class="item">
-        <a href="/records/tax-advisory/">Tax Advisory</a>
-      </div>
+      <!-- Legal Core -->
+      <div class="group">
+        <div class="group-label">Legal Core</div>
 
-      <div class="item">
-        <a href="/records/legal-representation/">Legal Representation</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/corporate-formation/">Corporate Formation</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/insolvency-restructuring/">Insolvency &amp; Restructuring</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/contract-enforcement/">Contract Enforcement</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/regulatory-compliance/">Regulatory Compliance</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/ma-advisory/">M&amp;A Advisory</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/payroll-employment/">Payroll &amp; Employment</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/financial-reporting/">Financial Reporting</a>
-      </div>
-
-      <div class="item">
-        <a href="/records/dispute-resolution/">Dispute Resolution</a>
+        <div class="item"><a href="/records/corporate-law/">Corporate Law</a></div>
+        <div class="item"><a href="/records/hiring-employment-law/">Hiring &amp; Employment Law</a></div>
       </div>
 
     </div>
