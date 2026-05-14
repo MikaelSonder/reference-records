@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,161 +6,289 @@
   <title>Reference Record Archive</title>
 
   <meta name="description"
-        content="A structural reference archive defining how professional competence operates across jurisdictions and regulated domains." />
+        content="Jurisdiction-specific reference records describing operational conditions across regulated professional environments." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       padding: 0;
-      background: #fafafa;
-      color: #111;
+      background: #f7f7f5;
+      color: #121212;
       font-family: Georgia, "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
     .container {
-      max-width: 880px;
-      margin: 95px auto;
-      padding: 0 36px;
+      max-width: 920px;
+      margin: 110px auto 120px auto;
+      padding: 0 38px;
     }
 
     .header {
-      margin-bottom: 65px;
+      max-width: 640px;
+      margin-bottom: 88px;
     }
 
     h1 {
-      font-size: 36px;
+      margin: 0 0 18px 0;
+      font-size: 62px;
       font-weight: normal;
-      margin-bottom: 10px;
-      letter-spacing: -0.2px;
+      letter-spacing: -1.4px;
+      line-height: 1;
     }
 
-    .subtitle {
-      font-size: 15px;
-      color: #555;
-      max-width: 520px;
-      line-height: 1.65;
+    .intro {
+      font-size: 20px;
+      line-height: 1.72;
+      color: #4b4b4b;
     }
 
-    .grid {
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e3e3df;
+      margin: 0 0 36px 0;
+    }
+
+    .meta-label {
+      font-size: 11px;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      color: #7a7a7a;
+      margin-bottom: 18px;
+    }
+
+    .structure {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 55px;
-      margin-top: 45px;
+      gap: 70px;
+      margin-bottom: 95px;
     }
 
-    .block-title {
-      font-size: 11.5px;
-      letter-spacing: 0.9px;
+    .block {
+      max-width: 360px;
+    }
+
+    .block h2 {
+      font-size: 13px;
+      letter-spacing: 1px;
       text-transform: uppercase;
+      font-weight: normal;
       color: #777;
-      margin-bottom: 10px;
+      margin: 0 0 18px 0;
     }
 
     .block p {
-      font-size: 16px;
-      line-height: 1.62;
-      margin-bottom: 10px;
+      margin: 0 0 18px 0;
+      font-size: 18px;
+      line-height: 1.8;
       color: #1a1a1a;
     }
 
-    .nav {
-      margin-top: 70px;
-      font-size: 15.5px;
+    .block p:last-child {
+      margin-bottom: 0;
     }
 
-    a {
+    .registry {
+      margin-bottom: 90px;
+    }
+
+    .registry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      margin-top: 28px;
+    }
+
+    .registry-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .registry-list a {
+      width: fit-content;
       text-decoration: none;
-      border-bottom: 1px solid #999;
-      color: inherit;
+      border-bottom: 1px solid #9b9b9b;
+      color: #171717;
+      font-size: 18px;
+      line-height: 1.5;
     }
 
-    a:hover {
-      border-bottom: 1px solid #111;
+    .registry-list a:hover {
+      border-color: #111;
+    }
+
+    .registry-note {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #555;
+      max-width: 330px;
+    }
+
+    .operational-note {
+      max-width: 640px;
+      margin-bottom: 100px;
+    }
+
+    .operational-note p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: #505050;
+      margin: 0 0 16px 0;
     }
 
     .footer {
-      margin-top: 110px;
-      font-size: 12.5px;
-      color: #666;
-      line-height: 1.6;
+      font-size: 12px;
+      line-height: 1.85;
+      color: #707070;
     }
 
-    @media (max-width: 700px) {
-      .grid {
-        grid-template-columns: 1fr;
-        gap: 38px;
-      }
+    @media (max-width: 760px) {
 
       .container {
-        padding: 0 22px;
-        margin: 70px auto;
+        margin: 72px auto 90px auto;
+        padding: 0 24px;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+
+      .structure,
+      .registry-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
+
+      .block,
+      .registry-note {
+        max-width: 100%;
       }
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
 
-    <div class="header">
+    <header class="header">
       <h1>Reference Record Archive</h1>
-      <div class="subtitle">
-        A structural reference archive defining how professional competence operates across jurisdictions and regulated domains.
-      </div>
-    </div>
 
-    <div class="grid">
+      <div class="intro">
+        Jurisdiction-specific reference records describing how regulated professional activity is structured across cross-border operational environments.
+      </div>
+    </header>
+
+    <hr class="section-divider" />
+
+    <div class="meta-label">Archive Structure</div>
+
+    <section class="structure">
 
       <div class="block">
-        <div class="block-title">Function</div>
-        <p>
-          The archive consists of jurisdiction-specific structural references describing how professional activity operates within defined procedural environments.
-        </p>
-        <p>
-          Each record defines system conditions, execution requirements, and competence indicators within its operational context.
-        </p>
-      </div>
+        <h2>Function</h2>
 
-      <div class="block">
-        <div class="block-title">Records</div>
         <p>
-          Entries reflect procedural reality at the time of publication.
+          The archive maintains jurisdiction-level reference records covering procedural conditions within regulated business environments.
         </p>
+
         <p>
-          Each record is defined within the constraints of its jurisdictional context.
+          Records are organized by professional domain, jurisdiction, and operational dependency.
         </p>
       </div>
 
       <div class="block">
-        <div class="block-title">Scope</div>
+        <h2>Record Conditions</h2>
+
         <p>
-          The archive is limited to environments characterized by formal enforcement structures, regulatory frameworks, and clearly defined procedural thresholds.
+          Entries are published according to the procedural conditions applicable at the time of review.
+        </p>
+
+        <p>
+          Regulatory amendments, filing practices, enforcement structures, and execution dependencies may vary between jurisdictions.
         </p>
       </div>
 
       <div class="block">
-        <div class="block-title">Continuity</div>
+        <h2>Coverage</h2>
+
         <p>
-          Records serve as long-term references and may be revised, expanded, or deprecated as jurisdictions and professional standards evolve.
+          The archive covers operational environments involving formal registration systems, regulatory reporting obligations, statutory enforcement mechanisms, and cross-border execution requirements.
         </p>
       </div>
 
-    </div>
+      <div class="block">
+        <h2>Publication Continuity</h2>
 
-    <div class="nav">
-      <a href="/reference-index">Reference Index</a>
-    </div>
+        <p>
+          Records may be revised, expanded, archived, or structurally reclassified as local procedures and professional standards evolve.
+        </p>
+      </div>
 
-    <div class="footer">
+    </section>
+
+    <section class="registry">
+
+      <div class="meta-label">Reference Domains</div>
+
+      <div class="registry-grid">
+
+        <div class="registry-list">
+          <a href="/company-formation">Company Formation</a>
+          <a href="/tax-advisory">Tax Advisory</a>
+          <a href="/accounting">Accounting</a>
+          <a href="/payroll-employment">Payroll & Employment</a>
+          <a href="/vat-advisory">VAT Advisory</a>
+          <a href="/debt-collection">Debt Collection</a>
+          <a href="/litigation">Litigation</a>
+          <a href="/corporate-law">Corporate Law</a>
+          <a href="/employment-law">Employment Law</a>
+        </div>
+
+        <div class="registry-note">
+          Domain records are maintained separately by jurisdiction. Operational structures, filing dependencies, enforcement conditions, and procedural sequencing differ across local regulatory systems.
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="operational-note">
+
+      <div class="meta-label">Editorial Scope</div>
+
+      <p>
+        The archive does not rank, score, or certify professional entities. Records are maintained as structured jurisdictional references intended for comparative operational review.
+      </p>
+
+      <p>
+        Included materials may reference procedural characteristics relating to registration systems, administrative practice, court dependency, reporting obligations, or execution sequencing within defined professional domains.
+      </p>
+
+    </section>
+
+    <footer class="footer">
       Reference Series: Cross-Border Professional Systems<br />
-      Record Type: Structural Reference<br />
-      Edition: Ongoing
-    </div>
+      Archive Classification: Jurisdictional Reference Environment<br />
+      Record Format: Structured Operational Reference<br />
+      Publication Status: Active<br />
+      Edition Cycle: Ongoing
+    </footer>
 
   </div>
+
 </body>
 </html>
+```
