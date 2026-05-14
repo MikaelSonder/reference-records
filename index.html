@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Reference Records</title>
+  <title>Reference Record Archive</title>
 
   <meta name="description"
-        content="Structured jurisdictional reference records organized by professional domain." />
+        content="Jurisdiction-specific reference records describing operational conditions across regulated professional environments." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -33,11 +33,11 @@
 
     .header {
       max-width: 620px;
-      margin-bottom: 54px;
+      margin-bottom: 95px;
     }
 
     h1 {
-      margin: 0 0 18px 0;
+      margin: 0 0 20px 0;
       font-size: 62px;
       font-weight: normal;
       letter-spacing: -1.5px;
@@ -50,6 +50,12 @@
       color: #4c4c4c;
     }
 
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e3e3df;
+      margin: 0 0 34px 0;
+    }
+
     .meta-label {
       font-size: 11px;
       letter-spacing: 1.3px;
@@ -58,54 +64,70 @@
       margin-bottom: 18px;
     }
 
-    .divider {
-      width: 100%;
-      height: 1px;
-      background: #e3e3df;
-      margin-bottom: 22px;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      margin-bottom: 95px;
     }
 
-    .list {
-      display: flex;
-      flex-direction: column;
-      max-width: 360px;
+    .block {
+      max-width: 350px;
     }
 
-    .group {
-      margin-top: 34px;
-    }
-
-    .group:first-child {
-      margin-top: 0;
-    }
-
-    .group-label {
-      font-size: 11px;
-      letter-spacing: 1.1px;
+    .block h2 {
+      margin: 0 0 18px 0;
+      font-size: 13px;
+      font-weight: normal;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      color: #8d8d8d;
-      margin-bottom: 12px;
+      color: #777;
     }
 
-    .item {
+    .block p {
+      margin: 0 0 18px 0;
       font-size: 18px;
-      line-height: 1.72;
-      margin: 2px 0;
-      color: #171717;
+      line-height: 1.82;
+      color: #1a1a1a;
     }
 
-    a {
+    .block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .editorial {
+      max-width: 640px;
+      margin-bottom: 105px;
+    }
+
+    .editorial p {
+      margin: 0 0 16px 0;
+      font-size: 15px;
+      line-height: 1.9;
+      color: #555;
+    }
+
+    .editorial p:last-child {
+      margin-bottom: 0;
+    }
+
+    .navigation {
+      margin-bottom: 110px;
+    }
+
+    .navigation a {
       text-decoration: none;
-      color: inherit;
-      border-bottom: 1px solid #b5b5b5;
+      border-bottom: 1px solid #9a9a9a;
+      color: #171717;
+      font-size: 18px;
+      line-height: 1.6;
     }
 
-    a:hover {
-      border-bottom: 1px solid #111;
+    .navigation a:hover {
+      border-color: #111;
     }
 
     .footer {
-      margin-top: 120px;
       font-size: 12px;
       line-height: 1.85;
       color: #707070;
@@ -126,7 +148,12 @@
         font-size: 18px;
       }
 
-      .list {
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
+
+      .block {
         max-width: 100%;
       }
     }
@@ -140,81 +167,94 @@
 
     <header class="header">
 
-      <h1>Reference Records</h1>
+      <h1>Reference Record Archive</h1>
 
       <div class="intro">
-        Structured jurisdictional records organized according to operational and professional domain classification.
+        Jurisdiction-specific reference records describing operational conditions across regulated cross-border professional environments.
       </div>
 
     </header>
 
-    <div class="meta-label">Archive Classification</div>
+    <hr class="section-divider" />
 
-    <div class="divider"></div>
+    <div class="meta-label">Archive Structure</div>
 
-    <div class="list">
+    <section class="grid">
 
-      <div class="group">
+      <div class="block">
 
-        <div class="group-label">Expansion</div>
+        <h2>Function</h2>
 
-        <div class="item">
-          <a href="/records/company-formation/">Company Formation</a>
-        </div>
+        <p>
+          The archive maintains structured reference records covering procedural conditions within jurisdiction-specific professional environments.
+        </p>
 
-        <div class="item">
-          <a href="/records/tax-advisory/">Tax Advisory</a>
-        </div>
-
-        <div class="item">
-          <a href="/records/accounting/">Accounting</a>
-        </div>
-
-        <div class="item">
-          <a href="/records/payroll-employment/">Payroll &amp; Employment</a>
-        </div>
-
-        <div class="item">
-          <a href="/records/vat-advisory/">VAT Advisory</a>
-        </div>
+        <p>
+          Records are organized according to domain, jurisdiction, and operational dependency.
+        </p>
 
       </div>
 
-      <div class="group">
+      <div class="block">
 
-        <div class="group-label">Problems</div>
+        <h2>Record Conditions</h2>
 
-        <div class="item">
-          <a href="/records/debt-collection/">Debt Collection</a>
-        </div>
+        <p>
+          Entries reflect procedural conditions applicable at the time of publication and review.
+        </p>
 
-        <div class="item">
-          <a href="/records/litigation/">Litigation</a>
-        </div>
-
-      </div>
-
-      <div class="group">
-
-        <div class="group-label">Legal Core</div>
-
-        <div class="item">
-          <a href="/records/corporate-law/">Corporate Law</a>
-        </div>
-
-        <div class="item">
-          <a href="/records/employment-law/">Employment Law</a>
-        </div>
+        <p>
+          Filing structures, enforcement systems, administrative practices, and reporting obligations may differ between jurisdictions.
+        </p>
 
       </div>
 
+      <div class="block">
+
+        <h2>Coverage</h2>
+
+        <p>
+          The archive covers professional environments involving formal registration systems, statutory procedures, regulatory reporting obligations, and cross-border operational requirements.
+        </p>
+
+      </div>
+
+      <div class="block">
+
+        <h2>Publication Continuity</h2>
+
+        <p>
+          Records may be revised, expanded, archived, or reclassified as local procedures and professional standards evolve over time.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section class="editorial">
+
+      <div class="meta-label">Editorial Scope</div>
+
+      <p>
+        The archive does not rank, certify, or evaluate professional entities. Records are maintained as structured jurisdictional references intended for operational and comparative review.
+      </p>
+
+      <p>
+        Included materials may reference procedural characteristics relating to registration systems, court dependency, reporting structures, enforcement conditions, or execution sequencing within defined professional domains.
+      </p>
+
+    </section>
+
+    <div class="navigation">
+      <a href="/records">Records</a>
     </div>
 
     <footer class="footer">
-      Classification: Domain Structure<br />
-      Archive Scope: Cross-Border Professional Systems<br />
-      Record Environment: Jurisdictional Reference Archive<br />
-      Publication Status: Active
+      Reference Series: Cross-Border Professional Systems<br />
+      Archive Classification: Jurisdictional Reference Environment<br />
+      Record Format: Structured Operational Reference<br />
+      Publication Status: Active<br />
+      Edition Cycle: Ongoing
     </footer>
 
   </div>
