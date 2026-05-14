@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -26,45 +26,45 @@
     }
 
     .container {
-      max-width: 920px;
-      margin: 110px auto 120px auto;
+      max-width: 860px;
+      margin: 120px auto 120px auto;
       padding: 0 38px;
     }
 
     .header {
-      max-width: 640px;
-      margin-bottom: 88px;
+      max-width: 620px;
+      margin-bottom: 95px;
     }
 
     h1 {
-      margin: 0 0 18px 0;
+      margin: 0 0 20px 0;
       font-size: 62px;
       font-weight: normal;
-      letter-spacing: -1.4px;
+      letter-spacing: -1.5px;
       line-height: 1;
     }
 
     .intro {
       font-size: 20px;
       line-height: 1.72;
-      color: #4b4b4b;
+      color: #4c4c4c;
     }
 
     .section-divider {
       border: none;
       border-top: 1px solid #e3e3df;
-      margin: 0 0 36px 0;
+      margin: 0 0 34px 0;
     }
 
     .meta-label {
       font-size: 11px;
       letter-spacing: 1.3px;
       text-transform: uppercase;
-      color: #7a7a7a;
+      color: #7b7b7b;
       margin-bottom: 18px;
     }
 
-    .structure {
+    .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 70px;
@@ -72,22 +72,22 @@
     }
 
     .block {
-      max-width: 360px;
+      max-width: 350px;
     }
 
     .block h2 {
+      margin: 0 0 18px 0;
       font-size: 13px;
+      font-weight: normal;
       letter-spacing: 1px;
       text-transform: uppercase;
-      font-weight: normal;
       color: #777;
-      margin: 0 0 18px 0;
     }
 
     .block p {
       margin: 0 0 18px 0;
       font-size: 18px;
-      line-height: 1.8;
+      line-height: 1.82;
       color: #1a1a1a;
     }
 
@@ -95,53 +95,36 @@
       margin-bottom: 0;
     }
 
-    .registry {
-      margin-bottom: 90px;
-    }
-
-    .registry-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      margin-top: 28px;
-    }
-
-    .registry-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .registry-list a {
-      width: fit-content;
-      text-decoration: none;
-      border-bottom: 1px solid #9b9b9b;
-      color: #171717;
-      font-size: 18px;
-      line-height: 1.5;
-    }
-
-    .registry-list a:hover {
-      border-color: #111;
-    }
-
-    .registry-note {
-      font-size: 15px;
-      line-height: 1.8;
-      color: #555;
-      max-width: 330px;
-    }
-
-    .operational-note {
+    .editorial {
       max-width: 640px;
-      margin-bottom: 100px;
+      margin-bottom: 105px;
     }
 
-    .operational-note p {
+    .editorial p {
+      margin: 0 0 16px 0;
       font-size: 15px;
       line-height: 1.9;
-      color: #505050;
-      margin: 0 0 16px 0;
+      color: #555;
+    }
+
+    .editorial p:last-child {
+      margin-bottom: 0;
+    }
+
+    .navigation {
+      margin-bottom: 110px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      border-bottom: 1px solid #9a9a9a;
+      color: #171717;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .navigation a:hover {
+      border-color: #111;
     }
 
     .footer {
@@ -153,7 +136,7 @@
     @media (max-width: 760px) {
 
       .container {
-        margin: 72px auto 90px auto;
+        margin: 78px auto 90px auto;
         padding: 0 24px;
       }
 
@@ -165,17 +148,16 @@
         font-size: 18px;
       }
 
-      .structure,
-      .registry-grid {
+      .grid {
         grid-template-columns: 1fr;
         gap: 42px;
       }
 
-      .block,
-      .registry-note {
+      .block {
         max-width: 100%;
       }
     }
+
   </style>
 </head>
 
@@ -184,100 +166,88 @@
   <div class="container">
 
     <header class="header">
+
       <h1>Reference Record Archive</h1>
 
       <div class="intro">
-        Jurisdiction-specific reference records describing how regulated professional activity is structured across cross-border operational environments.
+        Jurisdiction-specific reference records describing operational conditions across regulated cross-border professional environments.
       </div>
+
     </header>
 
     <hr class="section-divider" />
 
     <div class="meta-label">Archive Structure</div>
 
-    <section class="structure">
+    <section class="grid">
 
       <div class="block">
+
         <h2>Function</h2>
 
         <p>
-          The archive maintains jurisdiction-level reference records covering procedural conditions within regulated business environments.
+          The archive maintains structured reference records covering procedural conditions within jurisdiction-specific professional environments.
         </p>
 
         <p>
-          Records are organized by professional domain, jurisdiction, and operational dependency.
+          Records are organized according to domain, jurisdiction, and operational dependency.
         </p>
+
       </div>
 
       <div class="block">
+
         <h2>Record Conditions</h2>
 
         <p>
-          Entries are published according to the procedural conditions applicable at the time of review.
+          Entries reflect procedural conditions applicable at the time of publication and review.
         </p>
 
         <p>
-          Regulatory amendments, filing practices, enforcement structures, and execution dependencies may vary between jurisdictions.
+          Filing structures, enforcement systems, administrative practices, and reporting obligations may differ between jurisdictions.
         </p>
+
       </div>
 
       <div class="block">
+
         <h2>Coverage</h2>
 
         <p>
-          The archive covers operational environments involving formal registration systems, regulatory reporting obligations, statutory enforcement mechanisms, and cross-border execution requirements.
+          The archive covers professional environments involving formal registration systems, statutory procedures, regulatory reporting obligations, and cross-border operational requirements.
         </p>
+
       </div>
 
       <div class="block">
+
         <h2>Publication Continuity</h2>
 
         <p>
-          Records may be revised, expanded, archived, or structurally reclassified as local procedures and professional standards evolve.
+          Records may be revised, expanded, archived, or reclassified as local procedures and professional standards evolve over time.
         </p>
-      </div>
-
-    </section>
-
-    <section class="registry">
-
-      <div class="meta-label">Reference Domains</div>
-
-      <div class="registry-grid">
-
-        <div class="registry-list">
-          <a href="/company-formation">Company Formation</a>
-          <a href="/tax-advisory">Tax Advisory</a>
-          <a href="/accounting">Accounting</a>
-          <a href="/payroll-employment">Payroll & Employment</a>
-          <a href="/vat-advisory">VAT Advisory</a>
-          <a href="/debt-collection">Debt Collection</a>
-          <a href="/litigation">Litigation</a>
-          <a href="/corporate-law">Corporate Law</a>
-          <a href="/employment-law">Employment Law</a>
-        </div>
-
-        <div class="registry-note">
-          Domain records are maintained separately by jurisdiction. Operational structures, filing dependencies, enforcement conditions, and procedural sequencing differ across local regulatory systems.
-        </div>
 
       </div>
 
     </section>
 
-    <section class="operational-note">
+    <section class="editorial">
 
       <div class="meta-label">Editorial Scope</div>
 
       <p>
-        The archive does not rank, score, or certify professional entities. Records are maintained as structured jurisdictional references intended for comparative operational review.
+        The archive does not rank, certify, or evaluate professional entities. Records are maintained as structured jurisdictional references intended for operational and comparative review.
       </p>
 
       <p>
-        Included materials may reference procedural characteristics relating to registration systems, administrative practice, court dependency, reporting obligations, or execution sequencing within defined professional domains.
+        Included materials may reference procedural characteristics relating to registration systems, court dependency, reporting structures, enforcement conditions, or execution sequencing within defined professional domains.
       </p>
 
     </section>
+
+    <div class="navigation">
+      <a href="/reference-index">Reference Index</a>
+    </div>
 
     <footer class="footer">
       Reference Series: Cross-Border Professional Systems<br />
@@ -291,4 +261,3 @@
 
 </body>
 </html>
-```
